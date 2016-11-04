@@ -25,9 +25,10 @@ function getRandomIntInclusive(min, max) {
 }
 
 var formRoot = document.getElementById('quiz');
+var numberOfQ = 10;
 var arr = []
-while(arr.length < 5){
-    var randomnumber = getRandomIntInclusive(0, 5)
+while(arr.length < numberOfQ){
+    var randomnumber = getRandomIntInclusive(0, numberOfQ)
     if(arr.indexOf(randomnumber) > -1) continue;
     arr[arr.length] = randomnumber;
 }
