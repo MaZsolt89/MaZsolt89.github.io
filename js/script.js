@@ -71,6 +71,13 @@ var questions = [
   { question: "Az 5794861 (10) értéke 10110000110110000101100 (2)", answer: false},
   { question: "Az 10010011 (BCD) értéke 93 (10).", answer: true},
 
+  { question: "A 4 bites abszolútértékes ábrázolásnál nincs negatív nulla.", answer: false},
+  { question: "A 4 bites kettes komplemens ábrázolásnál a negatív előjelbit a 0", answer: false},
+  { question: "A 4 bites többletes kód ábrázolás 2^n-1 többletet használ.", answer: true},
+  { question: "A 4 bites egyes komplemens ábrázolásnál van negatív nulla.", answer: true},
+  { question: "A 'Carry' mint fogalom helyiértékre vonatkozik.", answer: true},
+  { question: "Az 'Overflow' mint fogalom a számábrázolási tartományra vonatkozik.", answer: true},
+
   { question: "Az AMD K6 processzor 64bit szervezésű.", answer: false},
   { question: "Az AMD k6 processzor 32bit szervezésű.", answer: true},
   { question: "Az Intel i3, i5, i7 processzor családok 32 bites szervezésűek.", answer: false},
@@ -90,6 +97,19 @@ var questions = [
   { question: "A BIOS-t a felhasználó (elvileg) módosítani nem tudja, csak lecserélni frisebbre, javítottra, más célra áttalakítottra.", answer: true},
   { question: "A BIOS biztosítja a kapcsolatot a Hardwerek és a Hardwerekre telepített operációs rendszer között.", answer: true},
   { question: "A BIOS segítségével a kapcsolódó I/O eszközöket a felhasználó paraméterezheti.", answer: true},
+
+  { question: "Az 'AND' igazságtáblája több 1-est tartalmaz mint a 'XOR'.", answer: false},
+  { question: "Matematikai logikában az A+(B*C)=(A+B)*(A+C) állítás", answer: true},
+  { question: "Matematikai logikában az A+0=0 állítás", answer: false},
+
+  { question: "A két logikai kapuból álló RS tároló 1 bájt tárolására képes.", answer: false},
+  { question: "A Statikus Hazárd csak rövid, egyszeri jelváltást okoz a kimeneten.", answer: true},
+  { question: "A Statikus Hazárdot a szekunder változók okozzák.", answer: false},
+  { question: "A Lényeges Hazárd csak aszinkron sorrendi hálózatokban fordul elő.", answer: true},
+
+  { question: "A Latency a lemez forgásából fakadó késedelem.", answer: true},
+  { question: "Az NCQ beolvasás alapja a kevesebb fejmozgás.", answer: true},
+  
 
   { question: "Informatikai szempontből a 'random' a 'sequence' ellentéte.", answer: true},
   { question: "A RAM jelentése 'Véletlen Hozzáférésű Memória'.", answer: false},
