@@ -50,7 +50,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 var formRoot = document.getElementById('quiz');
-var numberOfQ = 10;
+var numberOfQ = 24;
 var arr = []
 while(arr.length < numberOfQ){
     var randomnumber = getRandomIntInclusive(0, questions.length -1);
@@ -112,7 +112,7 @@ function newQuiz(){
 }
 
 function kiertekel(){
-  var str = 'Elért pontszám: ' + good + ' / ' + arr.length;
+
   var good = 0;
   var btnNew = document.createElement('button');
 
@@ -137,6 +137,7 @@ function kiertekel(){
         }
       }
   }
+  var str = 'Elért pontszám: ' + good + ' / ' + arr.length;
   formRoot.appendChild(btnNew);
   if(!document.getElementById('result')){
     var result = document.createElement('div');
