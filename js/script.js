@@ -26,7 +26,7 @@ var questions = [
   {id: 25, question: "Az eredeti Turing gép 10-es számrendszert használt.", answer: false},
   {id: 26, question: "Egy alaplap jellemzően rendelkezik BIOS-sal vagy UEFI-vel.", answer: true},
   {id: 27, question: "Kettes számrendszerben nem minden tört fejezhető ki pontosan.", answer: true},
-  {id: 28, question: "Az 5794861<sub>10</sub> értéke 10110000110110000101100<sub>2</sub>", answer: false},
+  {id: 28, question: "Az 5794861 (10) értéke 10110000110110000101100 (2)", answer: false},
   {id: 29, question: "Informatikai szempontből a 'random' a 'sequence' ellentéte.", answer: true},
   {id: 30, question: "A tranzisztor áramvezérelt eszköz.", answer: true},
   {id: 31, question: "A Mark-I és az ENIAC gépek 2-es számrendszert használtak.", answer: false},
@@ -58,9 +58,8 @@ while(arr.length < numberOfQ){
     arr[arr.length] = randomnumber;
 }
 
-console.log(arr);
-
 function createQuiz(){
+  var formRoot = document.getElementById('quiz');
   for(var i = 0; i< arr.length; i++){
     var qstn = document.createElement('div');
     var qstnSpan = document.createElement('span');
@@ -100,14 +99,27 @@ function createQuiz(){
   }
   var btn = document.createElement('button');
   btn.appendChild(document.createTextNode('Kiértékelés'));
-  btn.setAttribute('id', 'btn');
+  btn.setAttribute('class', 'btn');
   btn.setAttribute('type', 'button');
   btn.setAttribute('onclick', 'kiertekel()');
   formRoot.appendChild(btn)
 }
 
+function newQuiz(){
+  var content = document.getElementById('content');
+  content.removeChild(content.firstChild);
+  createQuiz();
+}
+
 function kiertekel(){
+  var str = 'Elért pontszám: ' + good + ' / ' + arr.length;
   var good = 0;
+  var btnNew = document.createElement('button');
+
+  btnNew.appendChild(document.createTextNode('Új Quiz'));
+  btnNew.setAttribute('class', 'btn');
+  btnNew.setAttribute('onclick', 'newQuiz()');
+
   for(var i = 0; i< arr.length; i++){
     var radios = document.getElementsByName('question' + questions[arr[i]].id);
     var div = document.getElementById('q' + questions[arr[i]].id);
@@ -121,20 +133,20 @@ function kiertekel(){
              } else {
                div.style.background = '#FF443F';
              }
-             break;
-           }
-         }
+          break;
+        }
+      }
   }
-  var str = 'Elért pontszám: ' + good + ' / ' + arr.length;
+  formRoot.appendChild(btnNew);
   if(!document.getElementById('result')){
     var result = document.createElement('div');
     result.setAttribute('id', 'result');
     result.appendChild(document.createTextNode(str))
     formRoot.appendChild(result);
   } else {
-      result = document.getElementById('result');
-      result.removeChild(result.firstChild);
-      result.appendChild(document.createTextNode(str))
+    var result = document.getElementById('result');
+    result.removeChild(result.firstChild);
+    result.appendChild(document.createTextNode(str))
   }
 
 }
