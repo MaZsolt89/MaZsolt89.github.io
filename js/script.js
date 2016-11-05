@@ -31,7 +31,7 @@ var questions = [
   {id: 30, question: "A tranzisztor áramvezérelt eszköz.", answer: true},
   {id: 31, question: "A Mark-I és az ENIAC gépek 2-es számrendszert használtak.", answer: false},
   {id: 32, question: "Egy nagyobb alapú számrendszer több számjegy használatát igényli.", answer: false},
-  {id: 33, question: "Az általánosan használt programozási nyelvek dekleratívka.", answer: false},
+  {id: 33, question: "Az általánosan használt programozási nyelvek dekleratívak.", answer: false},
   {id: 34, question: "A Harvard architektúra egy buszrendszert használ.", answer: false},
   {id: 35, question: "Egy HDD jellemzően rendelkezik BIOS-sal.", answer: false},
   {id: 36, question: "A CMOS fix feszültségszintekkel dolgozik.", answer: false},
@@ -95,10 +95,12 @@ function createQuiz(){
     qstn.appendChild(op1);
     qstn.appendChild(lblF);
     qstn.appendChild(op2);
+    if(i % 2 == 0) qstn.style.background = "#e0e0e0"
     formRoot.appendChild(qstn);
   }
   var btn = document.createElement('button');
   btn.appendChild(document.createTextNode('Kiértékelés'));
+  btn.setAttribute('id', 'btn');
   btn.setAttribute('type', 'button');
   btn.setAttribute('onclick', 'kiertekel()');
   formRoot.appendChild(btn)
