@@ -76,7 +76,7 @@ function createQuiz(){
     op1.setAttribute('value', 'true');
     op1.setAttribute('class', 'true');
 
-    op2.setAttribute('id', questions[arr[i]]);
+    op2.setAttribute('id', questions[arr[i]].id);
     op2.setAttribute('type', 'radio');
     op2.setAttribute('name', 'question' + questions[arr[i]].id);
     op2.setAttribute('value', 'false');
