@@ -174,26 +174,96 @@ var questions = [
   { question: "A hiszterézis szó görög eredetű.", answer: true},
   { question: "A hiszterézis szó latin eredetű.", answer: false},
   { question: "A hiszterézis szó hiányosságot, késést jelent.", answer: true},
-  { question: "Egy hiszterézissel rendelkező rendszer pillanatnyi állapota függ a korábbi állapotától, a erendszer előéletétől.", answer: true},
+  { question: "Egy hiszterézissel rendelkező rendszer pillanatnyi állapota függ a korábbi állapotától, a rendszer előéletétől.", answer: true},
   { question: "Egy hiszterézissel rendelkező rendszer pillanatnyi állapota nem függ a korábbi állapotától.", answer: false},
-  { question: "Hiszterézises rendszer pléldául egy termosztát, amiben egy elektronikus szabályozás elvén műküdő kapcsoló (hiszterézises Schmitt trigger) működik.", answer: true},
+  { question: "Hiszterézises rendszer például egy termosztát, amiben egy elektronikus szabályozás elvén műküdő kapcsoló (hiszterézises Schmitt trigger) működik.", answer: true},
   { question: "Egy hiszterézises rendszerben, ha nem ismerjük a rendszer pillanatnyi állapotát, akkor egy adott bemenő jel esetén nem lehet meghatározni a rendszer válaszát.", answer: true},
+  { question: "A ferromágneses anyagok jellemző tulajdonsága a hiszterézis.", answer: true},
 
   { question: "A ZIP Drive Bernoulli elven működik.", answer: true},
   { question: "A ZIP Drive-nál a lemez 3000-et fordul percenként.", answer: true},
   { question: "A ZIP Drive-nál a lemez 1500-at fordul percenként.", answer: false},
-  { question: "A ZIP Drive-nál a fej a forgás következtében létrejövő légpárnán - a lemeztől kb. 1 mikro m-re - helyezkedik el.", answer: true},
+  { question: "A ZIP Drive-nál a fej a forgás következtében létrejövő légpárnán - a lemeztől kb. 1 µm-re - helyezkedik el.", answer: true},
   { question: "A ZIP Drive-nál a fej hozzáér a lemezhez.", answer: false},
   { question: "A ZIP Drive nem terjedt el a PenDrive megjelenése miatt.", answer: true},
 
-  { question: "A Latency a lemez forgásából fakadó késedelem.", answer: true},
-  { question: "Az NCQ beolvasás alapja a kevesebb fejmozgás.", answer: true},
+  { question: "A Ferritgyűrűs tár tárolóelemei mátrixba vannak kötve.", answer: true},
+  { question: "A Ferritgyűrűs tár tárolóelemei sorba vannak kötve.", answer: false},
+  { question: "A Ferritgyűrű állapota úgy olvasható, ha azt vizsgálja az olvasó rutin, hogy 0 értékre írási kísérletre változik-e a tároló cella állapota.", answer: true},
+  { question: "Ha a Ferritgyűrűs tár olvasásakor az adott bit 0 értékű volt, akkor nem jelenik meg indukált feszültség.", answer: true},
+  { question: "Ha a Ferritgyűrűs tár olvasásakor az adott bit 0 értékű volt, akkor feszültség indukálódik.", answer: false},
+  { question: "Ha a Ferritgyűrűs tár olvasásakor az adott bit értéke 1 volt, akkor a 0-ra írás után megjelenik a feszültség.", answer: true},
+  { question: "Ha a Ferritgyűrűs tár olvasásakor az adott bit értéke 1 volt, akkor a 0-ra írás után nem indukálódik feszültség.", answer: false},
 
+  { question: 'A 3.0" lemezt Jánosi Marcell készítette a 70-es évek végén.', answer: false},
+  { question: 'A 3.0" lemezt Jánosi Marcell készítette a 60-es évek elején.', answer: false},
+  { question: 'A 3.0" lemezt Jánosi Marcell készítette a 70-es évek közepén (1974).', answer: true},
+
+  { question: "A HDD a horizontális (longitudinális) tároláshoz szimetrikus írófejet használ.", answer: true},
+  { question: "A HDD a horizontális (longitudinális) tároláshoz aszimmetrikus írófejet használ.", answer: false},
+  { question: "A HDD a veritkális (transzverzális) tároláshoz aszimmetrikus írófejet használ.", answer: true},
+  { question: "A HDD a vertikális (transzverzális) tároláshoz szimetrikus írófejet használ.", answer: false},
+  { question: "A vertikális adattárolás technológiának a kifejlseztése Hitachi nevéhez fűződik.", answer: true},
+  { question: "Az átlagos fejmozgatási idő a fej egyik sávról a másikra történő mozgásához szükséges idő átlaga.", answer: true},
+  { question: "A Latency a lemez forgásából fakadó késedelem.", answer: true},
+  { question: "A Latency a fej mozgásából fakadó késedelem.", answer: false},
+  { question: "Az átviteli idő az az idő, amely ahhoz szükséges, hogy egy adatblokkot a lemezkezló a pufferbe juttasson.", answer: true},
+  { question: "A Disc Interleaving a gyorsabb adateléréshez optimalizált (logikai) szektor sorrend.", answer: true},
+  { question: "A Disc Interleaving lehetővé teszi, hogy a legkissebb Latency idővel lehessen elérni a beolvasandó adatblokkot.", answer: true},
+  { question: "Az NCQ (Native Command Queuing) beolvasás alapja a kevesebb fejmozgás.", answer: true},
+  { question: "Az NCQ rendszer lehetővé teszi, hogy a HDD saját -legkevesebb fejmozgásra és időre optimalizált- egyedi sorrendben olvassa be egymás után a szektorokat.", answer: true},
+  { question: "A HDD kör alakú geometriája miatt a külső sávokon a szektorok nagyobb területet foglalnak el, mint a belső sávokon.", answer: true},
+  { question: "A HDD kör alakú geometriája miatt a külső sávokon a szektorok kissebb területet foglalnak el, mint a belső sávokon.", answer: false},
+  { question: "A ZBR (Zone Bit Recording) a HDD sávjait a terület optimális kihasználása éredkében zónákra bontja.", answer: true},
+
+  { question: "Az optikai lemezeken spirálisan tárolódnak az adatok.", answer: true},
+  { question: "Az optikai lemezeken sávokban tárolódnak az adatok.", answer: false},
+  { question: "Az optikai lemezeken található, ugynevezett pit-ek olvasásához állandó és több irányú kompenzált fej pozícionálására van szükség.", answer: true},
+  { question: "Az optikai lemezek aktuális sávjának követéséhez páratlan számú, a szomszédos sorokat is pásztázó olvasásra van szükség.", answer: true},
+  { question: "A DVD-RAM adatgeometriája egy ZBR HDD-hoz hasonló.", answer: true},
+  { question: "A DVD+R adattárolásra, a DVD-R pedig video anyagok tárolására szánt technológia.", answer: true},
+  { question: "A DVD+R video anyagok tárolására, a DVD-R pedig adatok tárolására szánt technológia.", answer: false},
+  { question: "A DVD+R a nagy filmstúdiók másolásvédelmi megoldásait nem támogatja.", answer: true},
+  { question: "A DVD+R támogatja a nagy filmstúdiók másolásvédelmi megoldásait.", answer: false},
+  { question: "DVD+R esetén a sávok követését segító extra infók az adatokkal együtt tárolódnak.", answer: true},
+  { question: "DVD+R esetén a sávok követését segító extra infók az adatoktól külön tárolódnak.", answer: false},
+  { question: "A DVD+R elviseli az írás megszakadását.", answer: true},
+  { question: "A DVD+R nem viseli el az írás megszakadását.", answer: false},
+  { question: "DVD-R esetén a sávok követését segítő extra infók az adatoktól külon tárolódnak.", answer: true},
+  { question: "DVD-R esetén a sávok követését segítő extra infók az adatokkal együtt tárolódnak.", answer: false},
+  { question: "A DVD-R nem viseli el az írás megszakadását.", answer: true},
+  { question: "A DVD-R elviseli az írás megszakadását.", answer: false},
+
+  { question: "A DRAM volatilis tároló, a feszültség kikapcsolásával elvész a benne tárolt tartalom.", answer: true},
+  { question: "A DRAM nem volatilis tároló, a feszültség kikapcsolásával a benne tárolt tartalom megmarad.", answer: false},
+  { question: "Az operatív tárak ma már gyakorlatilag csak dinamikus memóriából állnak.", answer: true},
   { question: "A dinamikus memóriák minden egyes cellája egy kondenzátort és egy tranzisztort tartalmaz.", answer: true},
+  { question: "A dinamikus memóriában az információt a kondenzátor tárolja.", answer: true},
+  { question: "A dinamikus memóriában az információt a tranzisztor tárolja. ", answer: false},
+  { question: "A DRAM-ot ciklikusan frissíteni kell (újraírni a tartalmát).", answer: true},
+  { question: "A DRAM címzése nem bitenként történik.", answer: true},
+  { question: "A DRAM címzése bitenként történik.", answer: false},
+  { question: "A RAS (Row Address Strobe) jelentése Sor Címzési idő.", answer: true},
+  { question: "A CAS (Column Address Strobe) jelentése Oszlop Címzési Idő", answer: true},
+  { question: "A CAS Latency (CL) a CAS-hoz tartozó optimális késleltetési idő.", answer: true},
+  
   { question: "A DDR3-1600 PC3-12800 valós órajele 800 MHz.", answer: true},
   { question: "A DDR3-800 PC3-6400 sávszélessége 800MB/s. ", answer: false},
   { question: "A DDR3-2000 PC3-16000 Föoldali busza 1000 MHz.", answer: false},
+
+  { question: "A ROM memória stabil, nem volatilis tároló.", answer: true},
+  { question: "A ROM memória instabil, volatilis tároló.", answer: false},
   { question: "A ROM csak egyszer írható.", answer: true},
+  { question: "A ROM többször írható.", answer: false},
+  { question: "A PROM haszbálata során egyszer írható (programozható), írása valamilyen visszafordíthatatlan folyamatot jelent (pl ellenállások elégetését).", answer: true},
+  { question: "A PROM elvileg egyszer írható, de amíg van benne írható bit, addig lehetséges a módosítás.", answer: true},
+  { question: "Az EPROM-ba betöltött adat törölhető.", answer: true},
+  { question: "Az EPROM-ba betöltött adat nem törölhető.", answer: false},
+  { question: "Az EPROM-ba betöltött adat törlését leggyakrabban a memória chip ultraibolya tartományba eső fénnyel történő megvilágításávaltehetjük meg.", answer: true},
+  { question: "Az EEPROM elektromosanis írható.", answer: true},
+  { question: "Az EEPROM írása sokkal lassabb, mint a RAM memóriák írása.", answer: true},
+  { question: "Az EEPROM írása sokkal gyorsabb, mint a RAM memóriák írása.", answer: false},
+  { question: "Az EEPROM hátránya hogy gyakran vagy csak egy egy bitet lehet törölni, vagy az egész tartalmát.", answer: true},
 
   { question: "Informatikai szempontből a 'random' a 'sequence' ellentéte.", answer: true},
   { question: "A RAM jelentése 'Véletlen Hozzáférésű Memória'.", answer: false},
@@ -279,6 +349,7 @@ function kiertekel(){
   var btnNew = document.createElement('button');
 
   btnNew.appendChild(document.createTextNode('Új Quiz'));
+  btnNew.setAttribute("id", "btnNew");
   btnNew.setAttribute('class', 'btn');
   btnNew.setAttribute('onclick', 'newQuiz()');
 
@@ -301,7 +372,8 @@ function kiertekel(){
       }
   }
   var str = 'Elért pontszám: ' + good + ' / ' + arr.length;
-  formRoot.appendChild(btnNew);
+  if(!document.getElementById("btnNew"))
+    formRoot.appendChild(btnNew);
   if(!document.getElementById('result')){
     var result = document.createElement('div');
     result.setAttribute('id', 'result');
