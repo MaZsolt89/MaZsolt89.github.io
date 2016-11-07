@@ -246,7 +246,10 @@ var questions = [
   { question: "A RAS (Row Address Strobe) jelentése Sor Címzési idő.", answer: true},
   { question: "A CAS (Column Address Strobe) jelentése Oszlop Címzési Idő", answer: true},
   { question: "A CAS Latency (CL) a CAS-hoz tartozó optimális késleltetési idő.", answer: true},
-  
+  { question: "Az RCD (RAS to CAS Delay) a RAS kívánt késedelmét mutatja meg a CAS-hoz képest.", answer: true},
+  { question: "Az RP (RAS Precharge/Sorletöltési idő) azt mutatja meg, hogy hány buszciklusnak kell eltelnie ahhoz, hogy az aktuálisan nyitott sor lezárásra kerüljön, és a következő sor megnyithatóvá váljon.", answer: true},
+  { question: "Az RC (Row Refresh cycle Time) a sorfrissítési ciklusidőt jelenti.", answer: true},
+  { question: "Az ECC (Error Correcting Code) memóriák paritásgenerálás segítségével képesek a hibajavításra.", answer: true},
   { question: "A DDR3-1600 PC3-12800 valós órajele 800 MHz.", answer: true},
   { question: "A DDR3-800 PC3-6400 sávszélessége 800MB/s. ", answer: false},
   { question: "A DDR3-2000 PC3-16000 Föoldali busza 1000 MHz.", answer: false},
@@ -267,7 +270,8 @@ var questions = [
 
   { question: "Informatikai szempontből a 'random' a 'sequence' ellentéte.", answer: true},
   { question: "A RAM jelentése 'Véletlen Hozzáférésű Memória'.", answer: false},
-  { question: "A RAM jelentése 'Tetszőleges Hozzáférésű Memória'.", answer: true}
+  { question: "A RAM jelentése 'Tetszőleges Hozzáférésű Memória'.", answer: true},
+  { question: "A Gyurinak le kellene mondania. (ez a 250. kérdés :D)" answer: true}
 ];
 console.log('Kérdések száma: ' + questions.length);
 
