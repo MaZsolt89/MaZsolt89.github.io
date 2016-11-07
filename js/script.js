@@ -271,7 +271,7 @@ var questions = [
   { question: "Informatikai szempontből a 'random' a 'sequence' ellentéte.", answer: true},
   { question: "A RAM jelentése 'Véletlen Hozzáférésű Memória'.", answer: false},
   { question: "A RAM jelentése 'Tetszőleges Hozzáférésű Memória'.", answer: true},
-  { question: "A Gyurinak le kellene mondania. (ez a 250. kérdés :D)" answer: true}
+  { question: "A Gyurinak le kellene mondania. (ez a 250. kérdés :D)", answer: true}
 ];
 console.log('Kérdések száma: ' + questions.length);
 
