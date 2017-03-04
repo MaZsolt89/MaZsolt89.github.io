@@ -1,1 +1,88 @@
-body{display:block;font-family:"Helvetica", "Arial", sans-serif;line-height:1.5;color:#555;margin:0;background-image:url(crossword.png);padding:0}#content{max-width:45em;margin:0 auto;padding-top:25px;padding-bottom:50px}#quiz div{padding:5px;display:flex}#quiz div span{flex:1;padding-left:5px}.btn{padding:10px;background:grey;color:white;border:1px solid black;margin-right:5px}header{margin:0 auto;background-color:#263d36;background-image:url("header.jpg");background-position:center top;background-repeat:no-repeat;background-size:cover;line-height:1.2;padding:10vw 2em;text-align:center}header h1{color:white;font-size:50px;padding:3px}
+/* line 1, D:/MaZsolt89.github.io/scss/style.scss */
+body {
+  display: block;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+  background-image: url(crossword.png);
+  padding: 0;
+}
+
+/* line 11, D:/MaZsolt89.github.io/scss/style.scss */
+.box {
+  text-align: center;
+  margin: 30px;
+  padding: 25px;
+  height: 300px;
+  border: 2px solid black;
+  background-position: center;
+}
+
+/* line 21, D:/MaZsolt89.github.io/scss/style.scss */
+#content {
+  max-width: 45em;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+/* line 26, D:/MaZsolt89.github.io/scss/style.scss */
+#content a {
+  font-size: 56px;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+/* line 35, D:/MaZsolt89.github.io/scss/style.scss */
+#quiz div {
+  padding: 5px;
+  display: flex;
+}
+
+/* line 38, D:/MaZsolt89.github.io/scss/style.scss */
+#quiz div span {
+  flex: 1;
+  padding-left: 5px;
+}
+
+/* line 45, D:/MaZsolt89.github.io/scss/style.scss */
+.btn {
+  padding: 10px;
+  background: grey;
+  color: white;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
+/* line 53, D:/MaZsolt89.github.io/scss/style.scss */
+header {
+  margin: 0 auto;
+  background-color: #263d36;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 8em;
+  text-align: center;
+}
+
+/* line 62, D:/MaZsolt89.github.io/scss/style.scss */
+header h1 {
+  color: white;
+  font-size: 50px;
+  padding: 4px;
+}
+
+/* line 69, D:/MaZsolt89.github.io/scss/style.scss */
+#archi {
+  background-image: url("header.jpg");
+}
+
+/* line 72, D:/MaZsolt89.github.io/scss/style.scss */
+#halo {
+  background-image: url("halo_header.jpg");
+}
+
+/*# sourceMappingURL=../css/style.map */

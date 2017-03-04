@@ -1,0 +1,45 @@
+var questions = [
+  { question: "A PAN kisebb hálózatot jelent mint a MAN.", answer: true, hint: "PAN < LAN < MAN < WAN < INTERNET"},
+  { question: "A MAN kisebb hálózatot jelent mint a PAN.", answer: false, hint: "PAN < LAN < MAN < WAN < INTERNET"},
+  { question: "Az elosztott rendszerekben lévő gépeket egy közös operációs rendszer fogja össze.", answer: true, hint: "Pedig ez igaz :D"},
+  { question: "A klasszikus hálózat autonóm gépekből áll.", answer: true, hint: "Pedig ez igaz :D"},
+  { question: "Az elosztott rendszerek autonóm gépekből állnak.", answer: false, hint: "A klasszikus hálózat áll autonóm gépekből."},
+  { question: "Az elosztott rendszert az átlag felhasználó jellemzően egy gépnek (erőforrásnak) látja.", answer: true, hint: "Ez igaz."},
+
+  { question: "A legtöbb ma is használatban lévő hálózati modell réteges (Layer) szerkezetű.", answer: true, hint: "Ez igaz."},
+  { question: "Az azonos szintű rétegek a felettük levő rétegek segítségével érik el egymást.", answer: false, hint: "Az azonos szintű rétegek az alattuk levő rétegekkel érik el egymást!"},
+  { question: "Az azonos szintű rétegek az alattuk levő rétegek segítségével érik el egymást.", answer: true, hint: "Ez igaz."},
+  { question: "Az azonos szintű rétegek közvetlenül elérik egymást.", answer: false, hint: "Ez csak a fizikai rétegre igaz. A többi réteg az alatta levő rétegen keresztül éri el az azonos szinten levő de más hosztnál található réteget."},
+  { question: "Az egymással szomszédos rétegek között interfész (Interface) található.", answer: true, hint: "Ez igaz."},
+  { question: "A különböző hosztok azonos rétegeit társidentitásoknak (Peer) nevezzük.", answer: true, hint: "Ez igaz."},
+  { question: "Az azonos rétegek közötti kommunkiáció szabályai az úgynevezett interfészek.", answer: false, hint: "Azok a protokollok!"},
+  { question: "Az azonos rétegek közötti kommunkiáció szabályai az úgynevezett protokollok.", answer: true, hint: "Ez igaz."},
+
+  { question: "Az interface-ekre virtuális kommunikácó jellemző.", answer: true, hint: "Ez igaz."},
+  { question: "Az interface egy hoszton belül az egymás alatti rétegek kommunikációja, ami 'valódi' kommunikáció.", answer: true, hint: "Ez igaz."},
+  { question: "Az interface különböző hosztok azonos szintjei közötti kommunikáció, ami 'virtuális' kommunikáció.", answer: false, hint: "Ez a protokollok jellemzője."},
+  { question: "Az interface különböző hosztok azonos szintjei közötti kommunikáció, ami nem közvetlenül, hanem közvetítő rétegek segítségével valósul meg.", answer: false, hint: "Ez a protokollok jellemzője."},
+  { question: "A protokoll különböző hosztok azonos szintjei közötti kommunikáció, ami 'virtuális' kommunikáció.", answer: true, hint: "Ez igaz."},
+  { question: "A protokoll különböző hosztok azonos szintjei közötti kommunikáció, ami nem közvetlenül, hanem közvetítő rétegek segítségével valósul meg.", answer: true, hint: "Ez igaz."},
+  { question: "A protokoll egy hoszton belül az egymás alatti rétegek kommunikációja, ami 'valódi' kommunikáció.", answer: false, hint: "Ez az interface-ek tulajdonsága."},
+
+  { question: "Az összekapcsolás alapú (Connection Oriented Service) rendszer modellezhető például a klaszikus (analóg) telefonhálózattal.", answer: true, hint: "Ez igaz."},
+  { question: "Az összekapcsolás alapú rendszerre példa a postai levélszolgáltatás.", answer: false, hint: "Ez az összeköttetés nélüli rendszerekre lehet példa."},
+
+  { question: "A 0G mobilhálózat jellemzője az automatikus hívásindítás", answer: false, hint: ""},
+  { question: "Az 1G mobilhálózat részben digitális megoldású.", answer: false, hint: ""},
+  { question: "A 2.5G mobilhálózat része az UMTS", answer: false, hint: "Az UMTS a 3G-nél jött."},
+  { question: "A 3G mobilhálózatnak nem része a WCDMA.", answer: false, hint: "2001-ben, az UMTS (más néven WCDMA) szabványosítása után indult a 3G."},
+
+  { question: "Az IT-ban használt IEC mértékegység alapja a tízes számrendszer.", answer: false, hint: ""},
+  { question: "Egy megabájt kisebb, mint egy mebibájt.", answer: true, hint: ""},
+  { question: "A bináris rendszr jellemzően háttértár méretre utal.", answer: false, hint: ""},
+  { question: "Egy informatikai mérnök számára a ávszélesség mértékegysége a Hz", answer: false, hint: ""},
+  { question: "A Shannon tétel az ideális átviteli csatornával kapcsolatos.", answer: false, hint: ""},
+  { question: "Az IEEE 802.3 szabványba a 'Base' szó jelentése 'alapvető'.", answer: false, hint: ""},
+  { question: "A 'T-568A' és 'T-568B' bekötése 50%-ban megegyezik.", answer: true, hint: ""},
+  { question: "Az LSOH/LSZH a kábel mechanikai tesztelésének jelzése.", answer: false, hint: ""},
+  { question: "Az NR2-S kódolást az USB szabvány használja.", answer: false, hint: ""},
+
+  //{ question: "", answer: true, hint: ""},
+];

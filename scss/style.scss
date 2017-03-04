@@ -8,11 +8,27 @@ body {
   padding: 0;
 }
 
+.box {
+  text-align: center;
+  margin: 30px;
+  padding: 25px;
+  height: 300px;
+  border: 2px solid black;
+  background-position: center;
+
+}
+
 #content {
     max-width: 45em;
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 50px;
+    a {
+        font-size: 56px;
+        color: white;
+        text-decoration: none;
+        margin: 0 auto;
+      }
 }
 
 #quiz {
@@ -37,16 +53,22 @@ body {
 header {
   margin: 0 auto;
   background-color: #263d36;
-  background-image: url("header.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.2;
-  padding: 10vw 2em;
+  padding: 8em;
   text-align: center;
     h1 {
       color: white;
       font-size: 50px;
-      padding: 3px;
+      padding: 4px;
     }
+}
+
+#archi{
+    background-image: url("header.jpg");
+}
+#halo{
+    background-image: url("halo_header.jpg");
 }
