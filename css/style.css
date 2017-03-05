@@ -21,7 +21,7 @@ body {
 
 /* line 21, D:/MaZsolt89.github.io/scss/style.scss */
 #content {
-  max-width: 45em;
+  max-width: 60em;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 50px;
@@ -35,19 +35,24 @@ body {
   margin: 0 auto;
 }
 
-/* line 35, D:/MaZsolt89.github.io/scss/style.scss */
+/* line 32, D:/MaZsolt89.github.io/scss/style.scss */
+#content span {
+  margin-right: 5px;
+}
+
+/* line 38, D:/MaZsolt89.github.io/scss/style.scss */
 #quiz div {
   padding: 5px;
   display: flex;
 }
 
-/* line 38, D:/MaZsolt89.github.io/scss/style.scss */
+/* line 41, D:/MaZsolt89.github.io/scss/style.scss */
 #quiz div span {
   flex: 1;
   padding-left: 5px;
 }
 
-/* line 45, D:/MaZsolt89.github.io/scss/style.scss */
+/* line 48, D:/MaZsolt89.github.io/scss/style.scss */
 .btn {
   padding: 10px;
   background: grey;
@@ -56,7 +61,7 @@ body {
   margin-right: 5px;
 }
 
-/* line 53, D:/MaZsolt89.github.io/scss/style.scss */
+/* line 56, D:/MaZsolt89.github.io/scss/style.scss */
 header {
   margin: 0 auto;
   background-color: #263d36;
@@ -68,19 +73,19 @@ header {
   text-align: center;
 }
 
-/* line 62, D:/MaZsolt89.github.io/scss/style.scss */
+/* line 65, D:/MaZsolt89.github.io/scss/style.scss */
 header h1 {
   color: white;
   font-size: 50px;
   padding: 4px;
 }
 
-/* line 69, D:/MaZsolt89.github.io/scss/style.scss */
+/* line 72, D:/MaZsolt89.github.io/scss/style.scss */
 #archi {
   background-image: url("header.jpg");
 }
 
-/* line 72, D:/MaZsolt89.github.io/scss/style.scss */
+/* line 75, D:/MaZsolt89.github.io/scss/style.scss */
 #halo {
   background-image: url("halo_header.jpg");
 }

@@ -19,7 +19,7 @@ body {
 }
 
 #content {
-    max-width: 45em;
+    max-width: 60em;
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -29,6 +29,9 @@ body {
         text-decoration: none;
         margin: 0 auto;
       }
+    span {
+      margin-right: 5px;
+    }
 }
 
 #quiz {
