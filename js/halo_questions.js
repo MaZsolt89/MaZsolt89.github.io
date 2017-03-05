@@ -60,7 +60,7 @@ var questions = [
   { question: "A szállítási réteg (OSI) az adatokat adatkeretekbe tödeli szét, ha szükséges.", answer: false, hint: "A keretezést az adatkapcsolati réteg végzi."},
   { question: "A szállítási réteg (OSI) két végpont közötti réteg (a forrás- és a célállomás egymással kommunikál).", answer: true, hint: "Ez igaz."},
   { question: "A szállítási réteg (OSI) és a fölötti rétegek kommunikációja hoszt-hoszt közötti, virtuális kommunikáció.", answer: true, hint: "Ez igaz."},
-  { question: "A szállítási réteg (OSI) feletti rétegek kommunikációja 'valódi kommunikáció.'", answer: false, hint: "A szállítási réteg és a fölötte levő rétegek kommunikációja 'virtuális'."},
+  { question: "A szállítási réteg (OSI) feletti rétegek hoszt-hoszt kommunikációja 'valódi kommunikáció.'", answer: false, hint: "A szállítási réteg és a fölötte levő rétegek hoszt-hoszt kommunikációja 'virtuális'."},
   { question: "", answer: true, hint: ""},
 
   //4. fejezet - A modell és az internet kialakulása
@@ -71,6 +71,21 @@ var questions = [
   { question: "A 2.5G mobilhálózat része az UMTS", answer: false, hint: "Az UMTS a 3G-nél jött."},
   { question: "A 3G mobilhálózatnak nem része a WCDMA.", answer: false, hint: "2001-ben, az UMTS (más néven WCDMA) szabványosítása után indult a 3G."},
 
+  //ZH kérdések voltak
+  { question: "A mikrohullám visszaverődik az ionoszférából.", answer: false, hint: ""},
+  { question: "Az AES a WEP2 védelem algoritmusa", answer: true, hint: ""},
+  { question: "Az LDPC kódolás matematikailag polinomokra épül.", answer: false, hint: ""},
+  { question: "A csúszóablakos protokoll tartalmaz önálló nyugtakeretet.", answer: true, hint: ""},
+  { question: "A DSSS 11db csatornája részben sem fedi át egymást.", answer: false, hint: ""},
+  { question: "Egy Switch-ekkel összekötött hálózatban nem fordulhat elő ütközés.", answer: true, hint: ""},
+  { question: "A Hamming-távolságot egy NOR művelettel számolhatjuk ki.", answer: false, hint: ""},
+  { question: "Az LLC alréteg felel a csatorna kiosztásért.", answer: false, hint: ""},
+  { question: "A versenyhelyzetben lévő protokollok nagy terhelésnél teljesítenek jól.", answer: false, hint: ""},
+  { question: "A karakterszámlálás egy sérülésvédett keretezési megoldás.", answer: false, hint: ""},
+  { question: "Páros paritás esetén a paritásbit 0, ha az 1-esek száma páros.", answer: true, hint: ""},
+  { question: "A 256-QAM egyetlen jelváltozással 16 bitet kódol.", answer: false, hint: "A 256-QAM 8 bitet kódol egyetlen jelváltozással."},
+  { question: "A p-perzisztens CSMA szabad csatorna esetén azonnal adni kezd.", answer: false, hint: ""},
+
   { question: "Az IT-ban használt IEC mértékegység alapja a tízes számrendszer.", answer: false, hint: ""},
   { question: "Egy megabájt kisebb, mint egy mebibájt.", answer: true, hint: ""},
   { question: "A bináris rendszer jellemzően háttértár méretre utal.", answer: false, hint: ""},
@@ -79,7 +94,7 @@ var questions = [
   { question: "Az IEEE 802.3 szabványba a 'Base' szó jelentése 'alapvető'.", answer: false, hint: ""},
   { question: "A 'T-568A' és 'T-568B' bekötése 50%-ban megegyezik.", answer: true, hint: ""},
   { question: "Az LSOH/LSZH a kábel mechanikai tesztelésének jelzése.", answer: false, hint: ""},
-  { question: "Az NR2-S kódolást az USB szabvány használja.", answer: false, hint: ""},
+  { question: "Az NRZ-S kódolást az USB szabvány használja.", answer: false, hint: ""},
 
   //{ question: "", answer: true, hint: ""},
 ];
